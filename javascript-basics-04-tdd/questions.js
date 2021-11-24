@@ -53,49 +53,54 @@ const hypothenuse = (ab, ac) => {
     return Math.sqrt(Math.pow(ab, 2) + Math.pow(ac, 2));
 }
 const BMI = (weight, height) => {
-    return  Number((weight / (height * height)).toFixed(2));
+    return Number((weight / (height * height)).toFixed(2));
 }
 
 const createLanguagesArray = () => {
-
+    return ["Html", "CSS", "Java", "PHP"];
 }
 
 const createNumbersArray = () => {
-
+    return [0, 1, 2, 3, 4, 5];
 }
 
 const replaceElement = (languages) => {
-
+    languages.splice(2, 1, "Javascript");
+    return languages;
 }
 
 const addElement = (languages) => {
-
+    languages.splice(languages.length, 0, "Ruby", "Python");
+    return languages;
 }
 
 const addNumberElement = (numbers) => {
-
+    numbers.splice(0, 0, -2, -1);
+    return numbers;
 }
 
 const removeFirst = (languages) => {
-
+    languages.shift();
+    return languages;
 }
 
 const removeLast = (languages) => {
-
+    languages.pop();
+    return languages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+    return social_arr.split(',');
 }
 
 const convertArrToStr = (languages) => {
-
+    return languages.toString();
 }
 
 const sortArr = (social_arr) => {
-
+    return social_arr.sort();
 }
 
 const invertArr = (social_arr) => {
-
+    return social_arr.reverse();
 }
